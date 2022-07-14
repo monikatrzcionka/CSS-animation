@@ -1,0 +1,55 @@
+@keyframes animation-red {
+
+    from {
+        top: 0%;
+        left: 0%;
+    }
+
+    25% {
+        left: 0%;
+        top: calc(75%)
+    }
+
+    50% {
+        top: calc(75%);
+        left: calc(75%); 
+    }
+      
+      75% {
+        left: calc(75%);
+        top: 0;
+    }
+    
+      100% {
+        left: 0; 
+        top: 0;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    animation: none;
+}
+
+div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animation-red;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
